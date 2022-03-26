@@ -11,19 +11,17 @@ const Shop = () => {
         .then(data=>setProducts(data))
     },[]);
     const handleAddToCart=(product)=>{
-        // console.log(product)
          const newCart=[...cart,product]
          setCart(newCart);
     }
     const handleChooseAgain=(randomNb)=>{
-        console.log(randomNb)
         randomNb.length=[]
         const cart=[];
         setCart(cart)
     }
     return (
         <div className="row w-100 ">
-           <div className="col-8 col-lg-8 row ms-2 ">
+           <div className="col-8 col-lg-8 row ms-2 mb-5 ">
            {
              products.map(product=><Product key={product.id} product={product} handleAddToCart={handleAddToCart}></Product>)
             }

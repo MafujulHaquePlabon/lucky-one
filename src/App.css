@@ -1,7 +1,9 @@
-.App {
+/* .App{
   text-align: center;
+} */
+.body{
+  background-color: gainsboro;
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;

@@ -12,9 +12,14 @@ const Shop = () => {
     },[]);
     const handleAddToCart=(product)=>{
         // console.log(product)
-         
          const newCart=[...cart,product]
          setCart(newCart);
+    }
+    const handleChooseAgain=(randomNb)=>{
+        console.log(randomNb)
+        randomNb.length=[]
+        const cart=[];
+        setCart(cart)
     }
     return (
         <div className="row w-100 ">
@@ -24,7 +29,7 @@ const Shop = () => {
             }
            </div>
            <div className="col-4 col-lg-4 ms-auto">
-               <Cart cart={cart}></Cart>
+               <Cart cart={cart} handleChooseAgain={handleChooseAgain}></Cart>
            </div>
         </div>
     );

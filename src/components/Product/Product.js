@@ -12,7 +12,7 @@ const Product = (props) => {
             <h5>{name}</h5>
             <h6>Price:${price}</h6>
            <div className='text-center'>
-           <button  onClick={()=>props.handleAddToCart(props.product)} className="bg-success border-0 rounded-pill px-4 py-2 text-white fw-bolder">Add To Card
+           <button  onClick={()=>props.handleAddToCart(props.product)} className="border-0 rounded-pill px-4 py-2 text-white fw-bolder hoverBtn">Add To Card
            <FontAwesomeIcon className="text-warning ps-2" icon={faShoppingCart} ></FontAwesomeIcon> 
            </button>
            

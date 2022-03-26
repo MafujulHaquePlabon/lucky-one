@@ -5,3 +5,9 @@
     position: sticky;
     top: 0;
 }
+.hoverBtn{
+    background-color: rgb(82, 170, 82);
+}
+.hoverBtn:hover{
+    background-color: green;
+}
